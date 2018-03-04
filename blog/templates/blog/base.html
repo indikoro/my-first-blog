@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Pineapple - USF's source of satire</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+  <div class="page-header">
+    <h1>The Pineapple</h1>
+    <h2>USF's premiere source for satire</h2>
+  </div>
+  <div class="content container">
+    <div class="row">
+      <div class="col-md-12">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>
